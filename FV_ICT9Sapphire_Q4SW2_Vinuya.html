@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Seatwork#2</title>
+
+<style type="text/css">
+body {
+	background-color: #284E60;
+	text-align: center;
+}
+.convertline {
+	margin-left: auto;
+	margin-right: auto;
+}
+.convertline th{
+	padding: 70px;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Time Converter</h1>
+<h2>D A Y S - H O U R S - M I N U T E S - S E C O N D S</h2>
+<br>
+<table class="convertline">
+	<tr>
+		<th style="background-color: #0074dd">DAYS
+			<p>
+				<input type="number" id="day">
+			</p>
+				<button style="background-color:#9BCCFD" onclick="DH()">To Hours</button>
+				<button style="background-color:#9BCCFD" onclick="DM()">To Minutes</button>
+				<button style="background-color:#9BCCFD" onclick="DS()">To Seconds</button>
+		</th>
+		<th style="background-color: #A16AE8">HOURS
+			<p>
+				<input type="number" id="hour">
+			</p>
+				<button style="background-color:#B19FF9" onclick="HD()">To Days</button>
+				<button style="background-color:#B19FF9" onclick="HM()">To Minutes</button>
+				<button style="background-color:#B19FF9" onclick="HS()">To Seconds</button>
+		</th>
+	</tr>
+	<tr>
+		<th style="background-color: #4120A9">MINUTES
+			<p>
+				<input type="number" id="min">
+			</p>
+				<button style="background-color:#905FD0" onclick="MD()">To Days</button>
+				<button style="background-color:#905FD0" onclick="MH()">To Hours</button>
+				<button style="background-color:#905FD0" onclick="MS()">To Seconds</button>
+		</th>
+		<th style="background-color: #660A6A">SECONDS
+			<p>
+				<input type="number" id="sec">
+			</p>
+				<button style="background-color:#C850B0" onclick="SD()">To Days</button>
+				<button style="background-color:#C850B0" onclick="SH()">To Hours</button>
+				<button style="background-color:#C850B0" onclick="SM()">To Minutes</button>
+		</th>
+	</tr>
+</table>
+<script type="text/javascript">
+		function DH(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 24;
+			alert(x * y);
+		}
+		function DM(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 1440;
+			alert(x * y);
+		}
+		function DS(){
+			var x, y
+			x = (document.getElementById('day').value);
+			y = 86400;
+			alert(x * y);
+		}
+		function HD(){
+			var x, y
+			x = (document.getElementById('hour').value);
+			y = 24;
+			alert(x / y);
+		}
+		function HM(){
+			var x, y
+			x = (document.getElementById('hour').value);
+			y = 60;
+			alert(x * y);
+		}
+			function HS(){
+			var x, y
+			x = (document.getElementById('hour').value);
+			y = 3600;
+			alert(x * y);
+		}
+		function MD(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 1440;
+			alert(x / y);
+		}
+		function MH(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 60;
+			alert(x / y);
+		}
+		function MS(){
+			var x, y
+			x = (document.getElementById('min').value);
+			y = 60;
+			alert(x * y);
+		}
+		function SD(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 86400;
+			alert(x / y);
+		}
+		function SH(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 3600;
+			alert(x / y);
+		}
+		function SM(){
+			var x, y
+			x = (document.getElementById('sec').value);
+			y = 60;
+			alert(x / y);
+		}
+</script>
+
+
+
+</body>
+</html>
